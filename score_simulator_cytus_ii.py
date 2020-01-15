@@ -48,12 +48,6 @@ def combo_score(individual_combo):
         score += combo_score_by_streak_base(notes_no, number)
     return score
 
-#print("Number of notes: " + str(notes_no))
-#print("Number of perfect notes: " + str(perfect_notes_no))
-#print("Number of good notes: " + str(good_notes_no))
-#print("Number of bad notes: " + str(bad_notes_no))
-#print("Longest Streak: " + str(max_combo_number))
-
 player_accuracy_score = accuracy_score(notes_no, perfect_notes_no, good_notes_no, bad_notes_no) 
 player_combo_score = combo_score(individual_combo)
 print(str(float(player_accuracy_score)))
